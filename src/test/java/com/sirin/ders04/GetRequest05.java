@@ -1,15 +1,14 @@
-package com.sirin.ders05;
+package com.sirin.ders04;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matcher;
-import org.hamcrest.MatcherAssert;
+
 import static org.hamcrest.Matchers.*;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetRequest03 {
+public class GetRequest05 {
 
      /*
     https://restful-booker.herokuapp.com/booking/7 url'ine
