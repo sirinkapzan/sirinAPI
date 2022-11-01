@@ -27,7 +27,7 @@ public class GetRequest07 {
         Response response = given().when().get(url);
         response.prettyPrint();
 
-        response.then().assertThat().contentType(ContentType.JSON).statusCode(200).
+        response.then().contentType(ContentType.JSON).statusCode(200).
                 body("data.id", hasSize(24),
                         "data.employee_name", hasItem("Ashton Cox"),
                         "data.employee_age", hasItems(21, 61, 23));

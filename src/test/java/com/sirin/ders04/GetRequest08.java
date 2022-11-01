@@ -1,6 +1,15 @@
 package com.sirin.ders04;
 
-public class GetRequest08 {
+import com.sirin.testBase.JsonPlaceHolderTestBase;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import org.junit.Test;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+public class GetRequest08 extends JsonPlaceHolderTestBase {
+
     /*
     https://jsonplaceholder.typicode.com/todos/123 url'ine
     accept type'i "application/json" olan GET request'i yolladigimda
@@ -13,4 +22,17 @@ public class GetRequest08 {
     ve "completed" bolumunun false oldugunu test edin
     */
 
+    @Test
+    public void test01(){
+        String url = "https://jsonplaceholder.typicode.com/todos/123";
+
+        spec.pathParams("first","todos","second",123);
+
+        Response response = given().spec(spec).when().get("/{first}/{second}");
+
+        response.prettyPrint();
+
+        response.then().header("Server",equalTo("coludfare"));
+
+    }
 }
