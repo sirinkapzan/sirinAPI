@@ -1,16 +1,14 @@
 package com.sirin.ders05;
 
-import com.sirin.testBase.RestfulTestBase;
-import io.restassured.http.ContentType;
+import com.sirin.testBase.Restful01TestBase;
 import io.restassured.response.Response;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.Assert.*;
 
-public class GetRequest10 extends RestfulTestBase {
+public class GetRequest10 extends Restful01TestBase {
 
     @Test
     public void test01() {

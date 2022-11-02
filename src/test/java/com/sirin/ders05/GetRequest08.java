@@ -1,4 +1,4 @@
-package com.sirin.ders04;
+package com.sirin.ders05;
 
 import com.sirin.testBase.JsonPlaceHolderTestBase;
 import io.restassured.http.ContentType;
