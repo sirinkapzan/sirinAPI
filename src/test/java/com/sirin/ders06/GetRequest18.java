@@ -65,7 +65,6 @@ public class GetRequest18 extends Restful02TestBase {
         assertEquals(
                 ((HashMap)(expectedData.get("bookingdates"))).get("checkout"),
                 ((HashMap)(actualData.get("bookingdates"))).get("checkout"));
-
     }
 }
 
