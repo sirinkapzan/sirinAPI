@@ -1,6 +1,7 @@
 package com.sirin.ders05;
 
-import com.sirin.testBase.Restful01TestBase;
+import com.sirin.testBase.ReqresTestBase;
+import com.sirin.testBase.Restful02TestBase;
 import io.restassured.response.Response;
 import org.junit.Test;
 
@@ -8,7 +9,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.Assert.*;
 
-public class GetRequest10 extends Restful01TestBase {
+public class GetRequest10 extends Restful02TestBase {
 
     @Test
     public void test01() {
