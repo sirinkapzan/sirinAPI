@@ -71,6 +71,12 @@ header değerlerinden
         assertEquals(expectedData.get("via"),response.getHeader("via"));
         assertEquals(expectedData.get("Server"),response.getHeader("Server"));
 
+        // 3. Yontem
+
+        HashMap<String,Object> actualData = new HashMap<>();
+        actualData = response.as(HashMap.class);
+
+
 
     }
 }

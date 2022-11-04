@@ -7,7 +7,9 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
@@ -49,6 +51,7 @@ public class GetRequest17 extends ReqresTestBase {
         Assert.assertEquals(2,nameList.size());
 
         System.out.println(jsonPath.getList("data.pantone_value"));
+
 
 
 
