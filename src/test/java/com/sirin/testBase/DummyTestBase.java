@@ -6,8 +6,55 @@ import org.junit.Before;
 
 public class DummyTestBase {
     protected RequestSpecification spec;
+
+
+
+
+
+
+
+
+
+
     @Before
     public void setUp(){
         spec = new RequestSpecBuilder().setBaseUri("http://dummy.restapiexample.com/api").build();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
