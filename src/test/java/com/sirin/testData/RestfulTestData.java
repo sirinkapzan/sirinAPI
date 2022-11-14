@@ -2,7 +2,7 @@ package com.sirin.testData;
 
 import java.util.HashMap;
 
-public class Restful02TestData {
+public class RestfulTestData {
     //                     {
     //                         "firstname": "Sally",
     //                         "lastname": "Jackson",
@@ -13,7 +13,7 @@ public class Restful02TestData {
     //                             "checkout": "2017-10-07"
     //                         }
     //                     }
-    public HashMap<String, Object> setUpTestBase() {
+    public HashMap<String, Object> setUpTestAndRequestBase() {
         HashMap<String, Object> bookingdates = new HashMap<>();
         bookingdates.put("checkin", "2016-06-04");
         bookingdates.put("checkout", "2017-10-07");

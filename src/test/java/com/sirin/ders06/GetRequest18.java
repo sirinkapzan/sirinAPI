@@ -1,10 +1,9 @@
 package com.sirin.ders06;
 
-import com.sirin.testBase.Restful02TestBase;
-import com.sirin.testData.Restful02TestData;
+import com.sirin.testBase.RestfulTestBase;
+import com.sirin.testData.RestfulTestData;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -12,7 +11,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
 
-public class GetRequest18 extends Restful02TestBase {
+public class GetRequest18 extends RestfulTestBase {
             /*
     https://restful-booker.herokuapp.com/booking/1 url ine bir istek gönderildiğinde
  dönen response body nin
@@ -38,7 +37,7 @@ public class GetRequest18 extends Restful02TestBase {
                 when().get("/{first}/{second}");
 
         //expected data
-        Restful02TestData restful02TestData = new Restful02TestData();
+        RestfulTestData restful02TestData = new RestfulTestData();
         HashMap<String, Object> expectedData = restful02TestData.setUpTestBase();
         System.out.println(expectedData);
 

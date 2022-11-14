@@ -1,17 +1,16 @@
 package com.sirin.ders05;
 
-import com.sirin.testBase.Restful02TestBase;
+import com.sirin.testBase.RestfulTestBase;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class GetRequest11 extends Restful02TestBase {
+public class GetRequest11 extends RestfulTestBase {
     /*
     https://restful-booker.herokuapp.com/booking/56 url’ine bir request yolladigimda
     HTTP Status Code’unun 200
