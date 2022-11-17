@@ -23,6 +23,7 @@ public class JsonPlaceHolderTestData {
 
         JSONObject expectedData = new JSONObject();
         expectedData.put("userId",55);
+        expectedData.put("statusCode",201);
         expectedData.put("title","Tidy your room");
         expectedData.put("completed",false);
 

@@ -37,8 +37,8 @@ public class GetRequest18 extends RestfulTestBase {
                 when().get("/{first}/{second}");
 
         //expected data
-        RestfulTestData restful02TestData = new RestfulTestData();
-        HashMap<String, Object> expectedData = restful02TestData.setUpTestBase();
+        RestfulTestData restfulTestData = new RestfulTestData();
+        HashMap<String, Object> expectedData = restfulTestData.setUpTestAndRequestBase();
         System.out.println(expectedData);
 
         //actual data
