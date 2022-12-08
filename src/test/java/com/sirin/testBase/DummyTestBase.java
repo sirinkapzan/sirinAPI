@@ -10,12 +10,6 @@ public class DummyTestBase {
 
 
 
-
-
-
-
-
-
     @Before
     public void setUp(){
         spec = new RequestSpecBuilder().setBaseUri("http://dummy.restapiexample.com/api").build();

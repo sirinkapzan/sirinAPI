@@ -19,16 +19,60 @@ public class JsonPlaceHolderTestData {
         return expectedData;
     }
 
-    public JSONObject setUpPostData(){
+    public JSONObject setUpPostData() {
 
         JSONObject expectedData = new JSONObject();
-        expectedData.put("userId",55);
-        expectedData.put("statusCode",201);
-        expectedData.put("title","Tidy your room");
-        expectedData.put("completed",false);
+        expectedData.put("userId", 55);
+        expectedData.put("statusCode", 201);
+        expectedData.put("title", "Tidy your room");
+        expectedData.put("completed", false);
 
         return expectedData;
     }
 
 
+    public JSONObject setUpPatchRequestData() {
+
+        JSONObject requestData = new JSONObject();
+
+        requestData.put("title", "API calismaliyim");
+
+        return requestData;
+    }
+
+    public JSONObject setUpPatchExpectedData() {
+
+        JSONObject expectedData = new JSONObject();
+
+        expectedData.put("userId", 10);
+        expectedData.put("title", "API calismaliyim");
+        expectedData.put("completed", true);
+        expectedData.put("id", 198);
+
+
+        return expectedData;
+
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
