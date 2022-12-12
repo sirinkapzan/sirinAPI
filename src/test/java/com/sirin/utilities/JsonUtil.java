@@ -1,4 +1,4 @@
-package com.techproed.utilities;
+package com.sirin.utilities;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
